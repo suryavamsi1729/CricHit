@@ -1,0 +1,21 @@
+.indicators{
+    position: relative;
+    overflow: hidden;
+}
+.indicators::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background: #ffffff;
+    animation: slide 2.5s linear;
+}
+@keyframes slide {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

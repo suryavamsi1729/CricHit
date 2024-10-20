@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ["Dancing Script", "cursive"],
+      rubik: ["Rubik", "cursive"]
     },
     borderRadius: {
       round: "50%"

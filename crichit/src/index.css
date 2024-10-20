@@ -15,3 +15,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.slick-slide > div{
+  margin: 0px 10px;
+}
+
+.slick-slider .slick-dots ul li.slick-active{
+  border-radius: 50%;
+  opacity: 0.9;
+  background-color: black;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track { 
+  width: 15px;
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 12.5px;
+  background: #888;
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 16px;
+}
+/* Remove default scrollbar button appearance */
+::-webkit-scrollbar-button {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12.5px;
+}
+
+/* Solid up arrow */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M12 2L3 13h18L12 2z"/></svg>');
+}
+
+/* Solid down arrow */
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23333"><path d="M12 22l9-11H3l9 11z"/></svg>');
+}

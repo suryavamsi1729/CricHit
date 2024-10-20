@@ -1,0 +1,25 @@
+.notifyTextAnime{
+    width: 0%;
+    overflow: hidden;
+    animation: TextAnime 1s ease-out;
+}
+@keyframes TextAnime {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: calc(100% - 24px - 8px);
+    }
+}
+.notifyDivAnime{
+    overflow: hidden;
+    animation: DivAnime 500ms ease-out;
+}
+@keyframes DivAnime {
+    0%{
+        transform: scaleX(0);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}

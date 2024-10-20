@@ -9,7 +9,7 @@ import CenterContainer from "components/elements/CenterContainer";
 import logo from "asserts/circhitlogo.png";
 gsap.registerPlugin(useGSAP,TextPlugin,SlowMo,CustomEase);
 export default function Landingpage(){
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const container = useRef();
     const tl = useRef();
     useGSAP(
@@ -17,8 +17,7 @@ export default function Landingpage(){
           tl.current = gsap
             .timeline({
                 onComplete: () => {
-                    // navigate('/login');
-                    console.log("finished")
+                    navigate('/login');
                 },
             })
             .to('.text-cricket , .logo', {

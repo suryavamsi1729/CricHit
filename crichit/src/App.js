@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Landingpage from 'components/pages/Landingpage';
+import MainRoute from 'route/MainRoute';
 function App() {
   return (
-    <Landingpage/>
+    <MainRoute/>
   );
 }
 

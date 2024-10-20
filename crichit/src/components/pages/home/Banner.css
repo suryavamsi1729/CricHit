@@ -1,0 +1,40 @@
+.arrow-box{
+    animation: move_anime 1s ease-in-out ;
+}
+@keyframes move_anime {
+    0%{
+        left: 50%;
+        scale: 0;
+    }
+    100%{
+        left: 5%;
+        scale: 1;
+    }
+}
+.arrow-box-bown{
+    animation: move_anime_bown 0.5s ease-out ;
+}
+@keyframes move_anime_bown {
+    0%{
+        bottom: -20%;
+    }
+    100%{
+        bottom: 15%;
+    }
+}
+.fade-img{
+    animation: fade 1s ease-out ;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;;
+    }
+    100%{
+        opacity: 1;;
+    }
+}
+.brand-name:hover{
+    transition: all 1.5s;
+    transform: scale(1.4);
+    text-shadow: 0 10px 10px rgba(63, 62, 62, 0.797);
+}
