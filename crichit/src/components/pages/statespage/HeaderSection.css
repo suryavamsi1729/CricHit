@@ -1,0 +1,11 @@
+:root{
+    --bgcolor:#252525;
+    --bgcolorblack:#1818187c;
+    --bgmain: #040405;
+}
+.header-section{
+    background-color:var(--bgcolorblack) ;
+}
+.profile-img-bg{
+    background-color: var(--bgmain);
+}

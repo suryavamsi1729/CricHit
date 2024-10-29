@@ -12,6 +12,12 @@ module.exports = {
     borderRadius: {
       round: "50%"
     },
+    extend: {
+      colors: {
+        'primarybgred': '#CB0164',
+        'primarybgdark': '#00002E'
+      },
+    }
   },
   plugins: [],
 }
