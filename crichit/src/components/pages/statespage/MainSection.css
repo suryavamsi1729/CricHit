@@ -1,0 +1,8 @@
+:root{
+    --bgcolor:#252525;
+    --bgcolorblack:#2424245a;
+    --bgmain: #040405;
+}
+.MainSection{
+    background-color:var(--bgcolorblack) ;
+}

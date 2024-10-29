@@ -58,8 +58,9 @@ export default function HeaderSection(){
                                     <p className="w-full h-auto flex flex-col justify-evenly items-center font-rubik font-medium"><span className="text-sm text-zinc-700">Role:</span><span className="text-base text-slate-50 block text-right">Top-Order <span className="block font-normal text-base">Batsmen</span></span></p>
                                 </div>
                             </div>
-                            <div className="w-[10%] h-full flex flex-col justify-center items-center">
+                            <div className="w-[10%] h-full flex flex-col justify-center items-center gap-4">
                                 <img className="w-[50px] h-[50px]" src={bcci} alt={"bcci"}/>
+                                <p className="font-rubik flex flex-col justify-center items-center gap-2"><span className="inline-block font-medium text-center text-base text-zinc-700">Icc Ranking:</span><span className="inline-block font-medium text-center text-4xl text-slate-300">#8</span></p>
                             </div>
                         </div>
                     </div>
