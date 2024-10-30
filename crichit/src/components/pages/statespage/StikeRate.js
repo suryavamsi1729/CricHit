@@ -21,7 +21,6 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  Filler,
   ChartDataLabels,
 );
 
@@ -30,12 +29,13 @@ export const options = {
   maintainAspectRatio: false,
   scales: {
     x: {
+        display:false,
       grid: {
-        
         display: false // hides grid lines on x-axis
       }
     },
     y: {
+        display:true,
       grid: {
         display: false // hides grid lines on y-axis
       }
@@ -48,10 +48,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Batting Avg per Year',
-    },
-    filler: {
-        propagate: true
+      text: 'StikeRaate per Year',
     },
     datalabels:{
       display:false,
@@ -71,13 +68,12 @@ export const data = {
       label: 'score',
       data: [1000,3000,2000,2500,5000,3000,4000,1000,3000,2000,2500,5000,3000,4000],
       borderColor: 'rgb(255, 99, 132)',
-      tension: 0.4,
+      tension: 0,
       backgroundColor: 'rgb(255, 99, 132, 0.6)',
-      fill:'origin',
     },
   ],
 };
 
-export function ChartStates() {
+export function StikeRate() {
   return <div className='w-full h-full '> <Line options={options} data={data} /> </div>;
 }

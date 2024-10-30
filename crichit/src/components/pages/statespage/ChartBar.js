@@ -12,7 +12,7 @@ import {
 
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -22,6 +22,7 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
+  ChartDataLabels,
 );
 
 export const options = {
@@ -48,11 +49,14 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Score per Year',
+      text: 'Runs per Year',
     },
-    
+    datalabels:{
+      display:false,
+    }
   },
-  barPercentage: 0.3
+  barPercentage: 0.3,
+  
 };
 
 const labels = [];

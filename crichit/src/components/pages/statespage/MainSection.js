@@ -22,7 +22,7 @@ export default function MainSection(){
             </div>
             <h1 className="text-lg text-white font-semibold text-center">Batting</h1>
             <div className="w-full h-auto px-8 py-8 flex flex-row justify-start flex-wrap items-center gap-y-4">
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Debut :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">June 20, 2011</span>
@@ -36,7 +36,7 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">31</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Total Matches :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">117</span>
@@ -50,7 +50,7 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">29</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Total Score :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">9035</span>
@@ -64,7 +64,7 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">7</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Stike Rate :</span>
@@ -82,25 +82,25 @@ export default function MainSection(){
             </div>
             <h1 className="text-lg text-white font-semibold text-center">Bowling</h1>
             <div className="w-full h-auto px-8 py-8 flex flex-row justify-start items-center flex-wrap  gap-y-4">
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Balls :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">175</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Maidens: :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">2</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Wickets: :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">0</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Economy Rate: :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">2.88</span>
@@ -109,25 +109,25 @@ export default function MainSection(){
             </div>
             <h1 className="text-lg text-white font-semibold text-center">Feilding</h1>
             <div className="w-full h-auto px-8 py-8 flex flex-row justify-start items-center flex-wrap  gap-y-4">
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Catches :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">113</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Most Catches in Innings :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">3</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Most Catches in Innings :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">4</span>
                     </p>
                 </div>
-                <div className="sm:w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
+                <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Economy Rate: :</span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">2.88</span>
