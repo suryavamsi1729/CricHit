@@ -4,3 +4,13 @@
 .states-container{
     background-color: #2828287c;
 }
+.left-arw-div{
+ background-color: #313030ab;
+}
+
+.left-arrow:hover{
+    cursor: pointer;
+}
+.left-arrow{
+    color: rgba(93, 91, 91, 0.712);
+}

@@ -1,6 +1,16 @@
 import React from "react";
 import './MainSection.css';
+import useOnClick from "hooks/useOnClick";
+import { useState } from "react";
+import Modelchart from "./Modelchart";
+import { ChartBar } from "./ChartBar";
+import { ChartStates } from "./ChartsStates";
+import { Dounent46 } from "./Dounent46";
+import { PolarAreaChart } from "./PolarAreaChart";
+import { StikeRate } from "./StikeRate";
 export default function MainSection(){
+    const {isclick,onclick}= useOnClick(false);
+    const [element,setElement] = useState(null);
     return(
         <>
         <div className="MainSection w-full h-auto">
@@ -32,7 +42,13 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">West indias</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">50s :</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={
+                            ()=>{
+                                onclick();
+                                setElement(<PolarAreaChart/>)
+                            }
+
+                            }>50s :</a></span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">31</span>
                     </p>
                 </div>
@@ -46,13 +62,21 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">119</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">100s :</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={
+                            ()=>{
+                                onclick();
+                                setElement(<PolarAreaChart/>);
+                            }
+                            }>100s :</a></span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">29</span>
                     </p>
                 </div>
                 <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Total Score :</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={()=>{
+                            onclick();
+                            setElement(<ChartBar/>);
+                        }}>Total Score :</a></span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">9035</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
@@ -60,18 +84,26 @@ export default function MainSection(){
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">254*</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">200s :</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={()=>{
+                            onclick();
+                            setElement(<PolarAreaChart/>);
+                            }}>200s :</a></span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">7</span>
                     </p>
                 </div>
                 <div className="w-full md:w-2/4 lg:w-1/4 h-auto rounded-[16px] flex flex-col justify-center items-center gap-4">
-                    
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Stike Rate :</span>
-                        <span className="w-1/2 h-auto text-left text-lg font-rubik font-medium text-gray-50">55.6</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={()=>{
+                            onclick();
+                            setElement(<StikeRate/>);
+                            }}>Stike Rate :</a></span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">55.6</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
-                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700">Avarage :</span>
+                        <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-zinc-700"><a className="inline-block hover:cursor-pointer hover:text-cyan-400 active:text-gray-200" onClick={()=>{
+                            onclick();
+                            setElement(<ChartStates/>);
+                            }}>Avarage :</a></span>
                         <span className="w-1/2 h-auto text-left text-base font-rubik font-medium text-gray-700">48.2</span>
                     </p>
                     <p className="w-full h-auto flex flex-row justify-center items-center">
@@ -135,6 +167,11 @@ export default function MainSection(){
                 </div>
             </div>
         </div>
+        <Modelchart isopen={isclick} handelOpen={onclick}>
+            {
+                element
+            }
+        </Modelchart>
         </>
     );
 }

@@ -34,7 +34,7 @@ export const options = {
         text: '50s 100s & 200s',
       },
       datalabels: {
-          
+          display:false,
           color: 'white',                // Label color
           font: {
             weight: 'bold',
@@ -57,11 +57,11 @@ export const options = {
       data: [300, 29],
       backgroundColor: [
         'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
+        'rgba(54, 162, 235,0s)',
       ],
       borderWidth:0,
       hoverOffset: 4,
-      borderJoinStyle:"round"
+      borderJoinStyle:"round",
     }]
   };
 export function Dounent46(){
