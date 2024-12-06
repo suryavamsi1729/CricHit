@@ -1,0 +1,21 @@
+.Tooltip{
+    position: absolute;
+    top: -100%;
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 8px;
+    /* visibility: hidden; */
+}
+.Tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -6px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #1e1e1e transparent transparent transparent;
+}
