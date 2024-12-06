@@ -67,7 +67,7 @@ export default function NavigationBar(){
                             <NavigationItem>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Live Score</p>
                             </NavigationItem>
-                            <NavigationItem>
+                            <NavigationItem onClick={()=>{navigate("/tourment")}}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Tournaments</p>
                             </NavigationItem>
                             <NavigationItem>

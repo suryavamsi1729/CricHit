@@ -82,7 +82,6 @@ export default function SignUp(){
                     <div className="w-full h-full md:w-3/5 md:h-[80%] lg:w-2/5 lg:h-[80%] flex flex-col justify-evenly items-center px-6 border-none rounded-[16px] bg-red-50">
                         <form  className="w-full h-auto flex flex-col justify-center items-center gap-6  ">
                         <h1 className="text-center font-mono font-semibold text-4xl text-red-500 ">SignUp</h1>
-                    
                         <Inputfeild val={FistName.value} change={FistName.onchange} type={"text"} error={Error.fistname} className={" w-full lg:w-4/5"} placeholder={"Fist Name"}>
                             <FontAwesomeIcon icon={faUser} style={{color: "#df7272",}} />
                         </Inputfeild>
@@ -110,7 +109,6 @@ export default function SignUp(){
                         </div>
                         <button onClick={
                             (e)=>{
-                                
                                 handelSubmit(e);
                             }
                         }

@@ -17,6 +17,9 @@ module.exports = {
         'primarybgred': '#CB0164',
         'primarybgdark': '#00002E'
       },
+      backgroundImage: {
+        'tourment-banner': "url('/src/asserts/tourment-banner.jpeg')",
+      }
     }
   },
   plugins: [],
