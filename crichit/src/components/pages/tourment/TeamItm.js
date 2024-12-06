@@ -3,32 +3,33 @@ import axios from "axios";
 import img from "../../../asserts/bcci.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
-import Tooltip from "components/elements/Tooltip";
+import Tooltip from "components/elements/Tooltip"; 
 export default function TeamItm(){
     const [data,setData] = useState([]);
     const [lodaing,setLoading] = useState(false);
+    const [error, setError] = useState("");
     useEffect(() => {
         const fetchData = async () => {
           setLoading(true);
-        //   setError("");
+          setError(""); // Reset error before making the request
+    
           try {
-            const response = await axios.get(
-              "https://cricket.sportmonks.com/api/v2.0/countries?api_token=mhTmoyi7sXUEwJbMkjN2v0NdMiASv1AE7rmYULjCBlsMTJLzfnyf0TFdWME4"
-            );
-            console.log(response.data);
+            const response = await axios.get('http://localhost:5001/api/countries'); // Sends request to the proxy
+            console.log(response.data); // Log full response for debugging
             setData(response.data.data); // Adjust based on actual response structure
           } catch (err) {
             console.error(err.message);
-            // setError("Failed to fetch data. Please try again.");
+            setError("Failed to fetch data. Please try again."); // Display error to user
           }
+    
           setLoading(false);
         };
     
         fetchData();
       }, []);
     
-    // mhTmoyi7sXUEwJbMkjN2v0NdMiASv1AE7rmYULjCBlsMTJLzfnyf0TFdWME4
-    // const data = [["countary","India"],["Captain","Rohit"],["Coach","Gambir"]];
+    // wctD0A8JAkOGidM2mhIr486nfNH8SeBAC3UOzSp9FAK10jiBdBrTCXlSyBxY
+    //efdaa6ec-90eb-4532-a575-10c5a956f114
     return(
         <div className="w-full h-auto hover:bg-[#353535] rounded-[12px] p-3">
             <div className="w-full h-full flex flex-row justify-start items-center gap-x-3">
