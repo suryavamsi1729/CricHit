@@ -14,7 +14,7 @@ export default function MatchItm({data}){
                             <p className="text-base font-semibold text-[#f1f1f1]">{`${data["round"]}`}</p>
                         </div>
                     </div>
-                    <p className="text-base font-semibold text-[#f1f1f1] text-right">03:30 PM</p>
+                    <p className="text-base font-semibold text-[#f1f1f1] text-right">{`${full_date["time"]["hrs"]}:${full_date["time"]["min"]} ${full_date["time"]["ampm"]}`}</p>
                 </div>
                 <div className="w-full h-auto flex flex-row justify-between items-center py-[18px] gap-4">
                     <div className="grow h-auto">
