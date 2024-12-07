@@ -61,26 +61,26 @@ export default function NavigationBar(){
                     </div>
                     <div className={`navigation-item-container  flex-1 cursor-pointer ${isclick?"block":"hidden"} lg:block`} >
                         <div className="w-full h-full flex flex-col lg:flex-row justify-center  items-center  gap-3 lg:gap-6 rounded-[14px]">
-                            <NavigationItem>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Home</p>
                             </NavigationItem>
-                            <NavigationItem>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Live Score</p>
                             </NavigationItem>
-                            <NavigationItem onClick={()=>{navigate("/tourment")}}>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "} onClick={()=>{navigate("/tourment")}}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Tournaments</p>
                             </NavigationItem>
-                            <NavigationItem>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Plan Match</p>
                             </NavigationItem>
-                            <NavigationItem>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Connect</p>
                             </NavigationItem>
                         </div>
                     </div>
                     <div className={`${isclick?"block":"hidden"} lg:block`}>
                         <div className="sign-in_up-container  w-auto h-full flex flex-col lg:flex-row justify-center items-center gap-3 lg:gap-6">
-                            <NavigationItem>
+                            <NavigationItem className={"py-[6px] px-4  rounded-[16px] hover:bg-[#97969662] "}>
                                 <p className="font-mono text-base/[20px] font-normal text-white">Contact US</p>
                             </NavigationItem>
                             {

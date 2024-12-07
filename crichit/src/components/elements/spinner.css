@@ -1,0 +1,34 @@
+.spinner {
+    animation: rotate 2s linear infinite;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .line-circle-2{
+    position: absolute;
+    stroke-dasharray: 283; /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    /* animation: dash 1.5s ease-in-out infinite; */
+  }
+  .line-circle {
+    position: absolute;
+    stroke-dasharray: 283; /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 220;
+    stroke-linecap: round;
+    /* animation: dash 1.5s ease-in-out infinite; */
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 283;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 283;
+    }
+  }
