@@ -1,11 +1,15 @@
 import {React} from "react";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "components/elements/Tooltip"; 
+import { motion } from "framer-motion";
 export default function TeamItm({data}){
+    const navigate = useNavigate();
     //api-key: wctD0A8JAkOGidM2mhIr486nfNH8SeBAC3UOzSp9FAK10jiBdBrTCXlSyBxY
     return(
-        <div className="w-full h-auto hover:bg-[#1c1c33] group rounded-[12px] p-3">
+        <div 
+          className="w-full h-auto hover:bg-[#1c1c33] group rounded-[12px] p-3 ">
             <div className="w-full h-full flex flex-row justify-start items-center gap-x-3">
                 <div className="w-[90px] h-full flex flex-row justify-center items-center">
                     <div className="w-[75px] h-[75px] flex justify-center items-center  rounded-round">

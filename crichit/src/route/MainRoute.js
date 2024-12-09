@@ -12,6 +12,8 @@ import States from "components/pages/statespage/States";
 import Home from "components/pages/tourment/Home";
 import Team from "components/pages/tourment/Teams";
 import Matches from "components/pages/tourment/Matches";
+import Live from "components/pages/tourment/Live";
+import TourStates from "components/pages/tourment/TourStates";
 export default function MainRoute() {
     return (
         <BrowserRouter>
@@ -23,6 +25,9 @@ export default function MainRoute() {
                 <Route path="/tourment" element={<Provider store={signUpStore}><Home/></Provider>}>
                     <Route path="teams" element={<Provider store={signUpStore}><Team/></Provider>}/>
                     <Route path="matches" element={<Provider store={signUpStore}><Matches/></Provider>}/>
+                    <Route path="live" element={<Provider store={signUpStore}><Live/></Provider>}/>
+                    <Route path="Stats" element={<Provider store={signUpStore}><TourStates/></Provider>}/>
+
                 </Route>
                 <Route path="/state" element={<Provider store={signUpStore}><States/></Provider>}/>
             </Routes>

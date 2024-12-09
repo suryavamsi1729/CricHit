@@ -8,7 +8,7 @@ export default function TeamContainer({children,pagenation,data,size}){
     const [page,setPage] = useState(0);
     return (
         <>
-            <div className="w-full h-auto grid grid-cols-3 gap-5 p-6 ">
+            <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-3 md:p-2 lg:p-6 ">
                 {
                     data.slice((page*size),((page + 1)*size)).map((itm)=>{
                         return(
@@ -22,7 +22,7 @@ export default function TeamContainer({children,pagenation,data,size}){
                 }
                 {
                     pagenation && (
-                        <div className="col-span-3">
+                        <div className="col-span-1 md:col-span-2 lg:col-span-3 ">
                             <div className="w-auto h-auto flex flex-row justify-end items-center gap-4 p-4">
                                 <div onClick={()=>{setPage(PagenationDown(page))}} className="w-12 h-12 flex flex-col justify-center items-center rounded-[12px] p-3 hover:bg-[#1c1c33] hover:cursor-pointer">
                                     <FontAwesomeIcon className="text-3xl text-[#f1f1f1f1]" icon={faAngleLeft} />
@@ -33,9 +33,7 @@ export default function TeamContainer({children,pagenation,data,size}){
                             </div>
                         </div>
                     )
-
                 }
-                
             </div>
         </>
     );

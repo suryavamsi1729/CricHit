@@ -1,0 +1,3 @@
+.navigator_BarElement::-webkit-scrollbar{
+    display: none;
+}
