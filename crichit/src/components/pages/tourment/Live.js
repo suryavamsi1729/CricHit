@@ -5,7 +5,7 @@ import LiveMatchItm from "./LiveMatchItm";
 export default function Live(){
     return(
         <>
-            <LoadingComp url={'http://localhost:5001/api/matches'} size={12}>
+            <LoadingComp url={['http://localhost:5001/api/matches']} size={12}>
                 <TeamContainer pagenation={true}>
                     <LiveMatchItm/>
                 </TeamContainer>

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import Tooltip from "components/elements/Tooltip"; 
-import { motion } from "framer-motion";
 export default function TeamItm({data}){
     const navigate = useNavigate();
     //api-key: wctD0A8JAkOGidM2mhIr486nfNH8SeBAC3UOzSp9FAK10jiBdBrTCXlSyBxY

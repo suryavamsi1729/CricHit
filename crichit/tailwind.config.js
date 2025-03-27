@@ -19,6 +19,7 @@ module.exports = {
       },
       backgroundImage: {
         'tourment-banner': "url('/src/asserts/tourment-banner.jpeg')",
+        'avatar': "url('/src/asserts/bcci.png')"
       }
     }
   },

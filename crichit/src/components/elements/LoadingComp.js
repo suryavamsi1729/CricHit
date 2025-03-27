@@ -3,6 +3,7 @@ import useFeatch from "hooks/useFeatch";
 import Spinner from "components/elements/Spinner";
 export default  function LoadingComp({children,url,size}){
     const [data,loading,error] = useFeatch(url);
+    // console.log(data[0]["team"]);
     return(
         <>
             <div className="w-full h-full">
